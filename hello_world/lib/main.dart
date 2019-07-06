@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import './app_screens/first_screen.dart';
 
 
 void main() => runApp(new myflutterApp());
@@ -13,16 +13,7 @@ Widget build(BuildContext context){
       title: "My Flutter App",
       home: Scaffold(
         appBar: AppBar(title: Text("my first widget")),
-        body: Material(
-          color: Colors.lightBlueAccent,
-          child: Center(
-            child: Text(
-              "Hello stateless widget",
-              textDirection: TextDirection.ltr,
-              style: TextStyle(color: Colors.white, fontSize: 40.0),
-            ),
-          ),
-        ),
+        body: FirstScreen()
       )
       );
 }
